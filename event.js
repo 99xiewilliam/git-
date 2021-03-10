@@ -20,6 +20,7 @@ export default class Event {
         }
         this.events[eventName].forEach(item => {
             item.call(this,...arg);
+            console.log(item);
         });
     }
 }
