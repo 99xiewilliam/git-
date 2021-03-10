@@ -13,6 +13,7 @@ export default class Event {
             return ;
         }
         this.events[eventName] = this.events[eventName].filter(item=>item!=fn);
+        console.log(1211);
     }
     dispatch(eventName,...arg){ //触发事件
         if(!this.events[eventName]){
